@@ -14,9 +14,8 @@ To see the PPrepair help:
 
 	docker run --rm niene/pprepair
 
-To run the docker pprepair command put your shapefiles in a seperate folder, called `repair_files`. Then run: 
+To run the docker pprepair command put your shapefiles in a separate folder, called `repair_files`. Then run: 
 
 	docker run --rm -v `pwd`/repair_files:/repair_files niene/pprepair -i repair_files/input_shapefile.shp -o repair_files/output_shapefile.shp -fix -rp -rtlb -rrlb
-
 
 The `--rm` flag removes the docker container and its volume after it is finished executing. 
